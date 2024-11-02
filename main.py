@@ -1,3 +1,8 @@
 from browser import Browser
+from dotenv import load_dotenv
 
-browser = Browser(url='https://www.google.com/', account='test')
+load_dotenv()
+
+browser = Browser(target_account='puppys.heaven')
+browser.login()
+browser.load_target_account()
